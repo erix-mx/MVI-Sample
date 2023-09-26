@@ -58,6 +58,9 @@ interface Event
 
 ## Caso Práctico: Contador
 
+![sample](https://firebasestorage.googleapis.com/v0/b/assets-1ae81.appspot.com/o/general%2Fezgif.com-video-to-gif-3.gif?alt=media&token=6bb4dd9b-4ad3-4ca1-851a-fa596ebca4e7**)
+
+
 ### `CounterViewModel`
 
 Administra las operaciones primarias de un contador, permitiendo incrementar, decrementar y reiniciar el valor.

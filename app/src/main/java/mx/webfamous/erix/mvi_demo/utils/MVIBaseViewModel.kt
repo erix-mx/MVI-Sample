@@ -1,8 +1,10 @@
 package mx.webfamous.erix.mvi_demo.utils
 
+import android.util.Log
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.consumeAsFlow
+import kotlinx.coroutines.flow.update
 
 abstract class MVIBaseViewModel<S: State, E: Event> : BaseViewModel()  {
     // Event
@@ -22,7 +24,9 @@ abstract class MVIBaseViewModel<S: State, E: Event> : BaseViewModel()  {
     protected fun updateUi(
         handler: suspend (state: S) -> S
     ) = execute {
-        _uiState.tryEmit(handler(_uiState.value))
+        _uiState.update {
+            handler(it)
+        }
     }
 
     protected fun executeIntent(
