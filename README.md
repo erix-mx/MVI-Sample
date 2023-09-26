@@ -1,8 +1,8 @@
-# Implementación del Patrón MVI en Android Compose
+## Implementación del Patrón MVI en Android Compose
 
 Este repositorio contiene una elegante implementación del patrón Model-View-Intent (MVI) usando Android Compose, manifestada a través de un contador simple pero eficiente.
 
-## Estructura Fundamental
+### Estructura Fundamental
 
 Se ha trabajado meticulosamente en una estructura MVI modular, consistente en ViewModel, Estado y Evento para garantizar un flujo coherente y modularizado.
 
@@ -56,9 +56,11 @@ interface State
 interface Event
 ```
 
+
+
 ## Caso Práctico: Contador
 
-![sample](https://firebasestorage.googleapis.com/v0/b/assets-1ae81.appspot.com/o/general%2Fezgif.com-video-to-gif-3.gif?alt=media&token=6bb4dd9b-4ad3-4ca1-851a-fa596ebca4e7**)
+![sample](https://firebasestorage.googleapis.com/v0/b/assets-1ae81.appspot.com/o/general%2Fezgif.com-video-to-gif-3.gif?alt=media&token=6bb4dd9b-4ad3-4ca1-851a-fa596ebca4e7)
 
 
 ### `CounterViewModel`
